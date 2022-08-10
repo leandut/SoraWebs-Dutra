@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="recursos/img/SoraIconTitle.png">
-	<!--mini logo diseño 32x32-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 	<link rel="stylesheet" href="estilos/estilos.css" />
 	<title>Sora Webs</title>
 </head>
+
 <body>
-	<!-- fila de logo + nav bar alineado a la derecha-->
-	<header class="headerClass">
-		<img class="headerLogo" alt="Sora Webs Logo" title="logo" /> <!-- logo sin ajustar (se ajustara con CSS)-->
-		<nav class="navBar">
-			<ul>
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="paginas/productos.html">Productos</a></li>
-				<li><a href="paginas/planesyprecios.html">Planes y Precios</a></li>
-				<li><a href="paginas/contacto.html">Contacto</a></li>
-				<li><a href="paginas/login.html">Login</a></li>
-			</ul>
+	<header>
+		<nav class="navbar navbar-expand-lg" style="background-color: #0c6bae;">
+			<div class="container-fluid"> <a class="navbar-brand" href="#">
+					<img src="recursos/img/soraIcon.png" alt="" width="25%" height="25%"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="true"
+					aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+					<ul class="navbar-nav mb-2 mb-lg-0">
+						<li class="nav-item mx-2"><a class="nav-link text-light fs-3" href="index.html"
+								aria-current="page">Inicio</a> </li>
+						<li class="nav-item mx-2"><a class="nav-link text-light fs-3"
+								href="paginas/productos.html">Productos</a></li>
+						<li class="nav-item px-2"><a class="nav-link text-light fs-3"
+								href="paginas/planesyprecios.html">Planes y precios</a></li>
+						<li class="nav-item mx-2"><a class="nav-link text-light fs-3"
+								href="paginas/contacto.html">Contacto</a></li>
+						<li class="nav-item mx-2"><a class="nav-link text-light fs-3"
+								href="paginas/login.html">Login</a></li>
+					</ul>
+				</div>
+			</div>
 		</nav>
+
 	</header>
+	<!-- NAVBAR ANTERIOR-->
+	<!--header class="headerClass">
+			<img class="headerLogo" alt="Sora Webs Logo" title="logo" /> 
+			<nav class="navBar">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="paginas/productos.html">Productos</a></li>
+					<li><a href="paginas/productos.html">Planes y Precios</a></li>
+					<li><a href="paginas/contacto.html">Contacto</a></li>
+					<li><a href="paginas/login.html">Login</a></li>
+				</ul>
+			</nav>
+		</header-->
 	<!-- fin de barra   -->
 	<!-- seccion de carrousel -->
 	<section>
@@ -29,12 +58,55 @@
 			<h1>Vende más, vende rápido, vende fácil</h1>
 			<!--titulo centrado-->
 			<div class="divItemCenter">
-				<p class="paragraphGenerico">Comienza tu tienda online e ingresa al mundo del Ecommerce, tendrás contigo
-					el equipo con más experiencia en asesoramiento, capacitación, implementación y gestión de eCommerce.
+				<p class="paragraphGenerico">Comienza tu tienda online e ingresa al mundo del Ecommerce, tendrás
+					contigo
+					el equipo con más experiencia en asesoramiento, capacitación, implementación y gestión de
+					eCommerce.
 				</p>
+					<!--div class="carouselItems">
+				<h1>Vende más, vende rápido, vende fácil</h1>
+				<div class="divItemCenter">
+					<p class="paragraphGenerico">Comienza tu tienda online e ingresa al mundo del Ecommerce, tendrás
+						contigo
+						el equipo con más experiencia en asesoramiento, capacitación, implementación y gestión de
+						eCommerce.
+					</p>
+				</div>
+				<img class="carouselImg" alt="Ejemplos de Productos" title="productos"-->
 			</div>
-			<img class="carouselImg" alt="Ejemplos de Productos" title="productos">
-			<!--sustituir por carrousel hecho en boostrap-->
+
+			<!--div class="container-fluid"-->
+			<div class="container-sm">
+				<div id="carouselIndexControls" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="recursos/img/carousel/carousel1.1.png" width="100%" height="600px"  alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="recursos/img/carousel/carousel4.png"  width="100%" height="600px"  alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="recursos/img/carousel/carousel8.8.png"  width="100%" height="600px"  alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="recursos/img/carousel/carousel12.jpg"  width="100%" height="600px"  alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="recursos/img/carousel/carousel7.png"  width="100%" height="600px"  alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselIndexControls"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselIndexControls"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!-- seccion de nosotros -->
@@ -91,6 +163,10 @@
 			<label>© Copyright. 2022 - Leandro Dutra</label>
 		</div>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+		crossorigin="anonymous"></script>
+
 </body>
 
 </html>
