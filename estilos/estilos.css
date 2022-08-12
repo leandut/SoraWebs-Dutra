@@ -225,7 +225,8 @@ li {
 .productos_tipos{
     border-bottom: 2px solid #d6e1e7;
     border-radius: 30px;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .productos_content {
@@ -454,7 +455,7 @@ li {
   
   .login_btn:hover {
       width:600px;
-      height: 100px; 
+      height: 50px; 
       background-color: blue;
       transition-property: all;
       transition-duration: 5s;
@@ -462,12 +463,11 @@ li {
   }
 
   .login_btn:hover::before {
-    content:"";
+    display: none;
   }
   .login_btn:hover::after {
-    content:" : Ingresando";
+    content:" > Ingresando";
   }
-  
   
 /********************************* GRID  **************************************/
 .grid {
@@ -610,3 +610,15 @@ li {
 		display: none !important
 	}
 }
+
+
+
+/**********************************************    BOOSTRAP CUSTOM            ********************************************/
+/*
+.cardCustom{
+  padding: 1.5em 1em 1em 1em;
+  border-radius: 2em;
+ text-align: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  margin: 2em 2em 2em 2em;
+}*/
