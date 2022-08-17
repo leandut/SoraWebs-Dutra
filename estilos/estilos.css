@@ -44,9 +44,25 @@ li {
   color: white;
     font-size: 20px;
 }
+.paragraphGenerico{
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  text-align:center;
+}
+.paraphCenter {
+  text-align: center;
+}
+
+/***************************************        HEADER      **********************************************/
+
+.navBarSoraLogo {
+  content: url('../recursos/img/soraIcon.png');
+  width: 25%;
+  height: 25%;
+}
 
 /***************************************        HEADER REEMPLAZADO POR BOOSTRAP      **********************************************/
-
  /*.headerClass {
     display: flex;
     align-items: center;
@@ -82,30 +98,37 @@ li {
 /***************************************        FOOTER      **********************************************/
 .footer{
     display: flex;
-	align-items: center;
-   /* background-color: #1c3443;*/
-    border-top: 2px solid white;
-    border-radius: 15px;
+	  align-items: center;
+    /* background-color: #1c3443;*/
+    /*border-color: 2px ;*/
+   /*border-top-left-radius: 40px 20px solid white;*/
+   /* border-radius: 15px;*/
+   margin-top: 15px;
+   padding: 10px;
+    background-color: #0d6efd;
+    background-image: linear-gradient(#2196F3,#0d6efd);
 }
 
 .footerLinks{
-    display: flex;
+ /* -ms-box-orient: horizontal;*/
+  display: flex;
 	justify-content: flex-start;
 	flex: 1;
 }
 
 .footerLinks li{
-        display: inline-block;
+  display: inline-block;
         padding: 15px;
 }
 .footerLinks ul{
-    padding-inline-start: 0px;
+    /*padding-inline-start: 0px;*/
+    flex-wrap: wrap;
 }
 
 .footerLinks a{
         color: white;
         cursor: pointer;
-        text-decoration: none;
+       text-decoration: none;
         transition-property: color;
         transition-duration: 2s;        
         transition-timing-function: linear;
@@ -122,7 +145,6 @@ li {
     font-size: 18px;
     padding:15px;
 }
-
 
 
 /********************************* FIN BODY HEADER FOOTER **************************************/
@@ -158,9 +180,6 @@ li {
     width:50%;
 }
 
-.paraphCenter {
-    text-align: center;
-}
 /********************************* SECCION FILTRO **************************************/
 
 
@@ -181,12 +200,7 @@ li {
  justify-content: center;
 }
 
-.paragraphGenerico{
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    text-align:center;
-}
+
 
 /**************************************  PLANES  Y PRECIOS        ***************************************************/
 
@@ -273,9 +287,9 @@ li {
 
 /****************** CONTACTO *******************************************************/
 .contact_form{  
-   width: 600px; 
+   width: 100%; 
     height: auto;
-    margin: 80px auto;
+    margin: 20px auto;
     border-radius: 10px;  
     padding-top: 30px;
     padding-bottom: 20px;  
@@ -286,7 +300,7 @@ li {
   
   .contact_form  input{
     background-color: #fbfbfb; 
-    width: 600px; 
+    width: 100%; 
     height: 40px; 
     border-radius: 5px;  
     border-style: solid; 
@@ -300,7 +314,7 @@ li {
   
   .contact_form textarea{
     background-color: #fbfbfb; 
-    width: 600px; 
+    width: 100%; 
     height: 40px; 
     border-radius: 5px;  
     border-style: solid; 
@@ -313,12 +327,8 @@ li {
   }
   
   
-  .contact_form  label{
-    display: block; 
- }
-  
-  
   .contact_form button{
+    width:200px;
     height: 50px; 
     padding-left: 5px;
     padding-right: 5px;   
@@ -328,8 +338,7 @@ li {
     background-color: #73b7d2; 
     border-color: #73b7d2; 
     border-style: solid; 
-    border-radius: 10px;  
-    width: 200;   
+    border-radius: 10px;    
     cursor: pointer;
   }
   
@@ -363,11 +372,10 @@ li {
 /********************************************* LOGIN *************************************/
 
 .login_form{  
-    width: 600px; 
+    width: 100%; 
      height: auto;
      margin: 80px auto;
      border-radius: 10px;  
-     padding-top: 30px;
      padding-bottom: 20px;  
     /* background-color: #fbfbfb; */
      padding-left: 30px; 
@@ -376,7 +384,7 @@ li {
    
    .login_form  input{
      background-color: #fbfbfb; 
-     width: 600px; 
+     width: 100%;
      height: 40px; 
      border-radius: 5px;  
      border-style: solid; 
@@ -390,7 +398,7 @@ li {
    
    .login_form textarea{
      background-color: #fbfbfb; 
-     width: 600px; 
+     width: 100%; 
      height: 40px; 
      border-radius: 5px;  
      border-style: solid; 
@@ -401,11 +409,6 @@ li {
      margin-bottom: 20px; 
      padding-top: 15px; 
    }
-   
-   
-   .login_form  label{
-     display: block; 
-  }
    
    
    .login_form button{
@@ -420,7 +423,6 @@ li {
      border-color: #73b7d2; 
      border-style: solid; 
      border-radius: 10px;  
-     width: 200;   
      cursor: pointer;
      text-decoration: none;
    }
@@ -454,7 +456,7 @@ li {
    
   
   .login_btn:hover {
-      width:600px;
+      width:100%;
       height: 50px; 
       background-color: blue;
       transition-property: all;
@@ -469,6 +471,13 @@ li {
     content:" > Ingresando";
   }
   
+
+  .formCenter {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+
 /********************************* GRID  **************************************/
 .grid {
 	width: auto;
@@ -511,15 +520,15 @@ li {
 }
 
 .grid a:hover {
-	opacity: 0.7 /*0 - 1*/;
+	opacity: 0.8 
 }
 
 .grid a:hover {
-	opacity: 0.7 /*0 - 1*/;
+	opacity: 0.8 
 }
 
 .grid p:hover {
-	opacity: 0.7 /*0 - 1*/;
+	opacity: 0.8 
 }
 .grid1 {
 	grid-area: producto1
@@ -572,9 +581,38 @@ li {
 }
 
 /**********************************************    ResponsiveItems            ********************************************/
-@media (max-width: 768px){
 
-    .menu_sections {
+@media screen and (max-width: 600px) {
+  
+  .paragraphGenerico {
+      font-size: 80%;
+  }
+  .footerLinks li{
+  font-size: 80%;
+  }
+  .footerLinks a{
+    font-size: 80%;
+    }
+    .footerCopyright label{
+      font-size: 70%;
+      }
+}
+@media screen and (max-width: 400px) {
+  
+  .paragraphGenerico {
+      font-size: 60%;
+  }
+  .footerLinks li{
+    font-size: 60%;
+    }
+    .footerLinks a{
+      font-size: 60%;
+    }
+    .footerCopyright label{
+      font-size: 60%;
+      }
+}
+    /* .menu_sections {
 		flex-wrap: wrap;
 	}
 
@@ -608,8 +646,10 @@ li {
 
 	.accesos ul {
 		display: none !important
-	}
-}
+	} */
+
+
+
 
 
 

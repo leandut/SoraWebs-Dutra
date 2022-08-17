@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="../recursos/img/SoraIconTitle.png"> <!--mini logo diseño 32x32-->
+	<link rel="shortcut icon" href="../recursos/img/SoraIconTitle.png">
+	<!--mini logo diseño 32x32-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-	<link rel="stylesheet" href="../estilos/estilos.css"/>
+	<link rel="stylesheet" href="../estilos/estilos.css" />
 	<title>Sora Webs - Contacto</title>
 </head>
+
 <body>
 	<header>
-		<nav class="navbar navbar-expand-lg" style="background-color: #0c6bae;">
-			<div class="container-fluid"> <a class="navbar-brand" href="#">
-					<img src="../recursos/img/soraIcon.png" alt="" width="25%" height="25%"></a>
+		<nav class="navbar navbar-expand-lg bg-primary bg-gradient">
+			<div class="container-fluid"> <a class="navbar-brand" href="../index.html">
+					<img src="../recursos/img/soraIcon.png" alt="" class="navBarSoraLogo"></a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="true"
 					aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
 					<ul class="navbar-nav mb-2 mb-lg-0">
-						<li class="nav-item mx-2"><a class="nav-link text-light fs-3" href="../index.html" aria-current="page">Inicio</a> </li>
-						<li class="nav-item mx-2"><a class="nav-link text-light fs-3" href="productos.html">Productos</a></li>
-						<li class="nav-item px-2"><a class="nav-link text-light fs-3" href="planesyprecios.html">Planes y precios</a></li>
-						<li class="nav-item mx-2"><a class="nav-link text-light fs-3" href="contacto.html">Contacto</a></li>
+						<li class="nav-item mx-2"><a class="nav-link text-light fs-3" href="../index.html"
+								aria-current="page">Inicio</a> </li>
+						<li class="nav-item mx-2"><a class="nav-link text-light fs-3"
+								href="productos.html">Productos</a></li>
+						<li class="nav-item px-2"><a class="nav-link text-light fs-3" href="planesyprecios.html">Planes
+								y precios</a></li>
+						<li class="nav-item mx-2"><a class="nav-link text-light fs-3" href="contacto.html">Contacto</a>
+						</li>
 						<li class="nav-item mx-2"><a class="nav-link text-light fs-3" href="login.html">Login</a></li>
 					</ul>
 				</div>
@@ -32,83 +39,91 @@
 
 	</header>
 	<!-- fin de barra -->
+	<section>	
+			<h1>Formulario de contacto</h1>
+			<p class="paragraphGenerico">Escríbenos y en breve nos pondremos en contacto contigo</p>
 
-	<div class="contact_form">
-		<div class="formulario">      
-		  <h1>Formulario de contacto</h1>
-			<h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>	
-			  <form>       
-					<p>
-					  <label for="nombre" class="colocar_nombre">Nombre y apellido
-						<span class="obligatorio">*</span>
-					  </label>
-						<input type="text"  placeholder="Escribe tu nombre">
-					</p>
-				  
-					<p>
-					  <label for="email" class="colocar_email">Email
-						<span class="obligatorio">*</span>
-					  </label>
-						<input type="email"  placeholder="Escribe tu Email">
-					</p>
+		<div class="formCenter">
+			<div></div>
+			<div class="contact_form">
+				<div class="formulario">
 				
-					<p>
-					  <label for="telefono" class="colocar_telefono">Teléfono
-					  </label>
-						<input type="tel"  placeholder="Escribe tu teléfono">
-					</p>    
-				  
-					<p>
-					  <label  class="colocar_website">Razón Social, Nombre fantasía
-					  </label>
-						<input type="url" placeholder="Escribe el nombre de tu tienda/comercio/empresa (nombre legal, fantasía)">
-					</p>    
-				  
-					<p>
-					  <label  class="colocar_asunto">Asunto
-						<span class="obligatorio">*</span>
-					  </label>
-						<input type="text"  placeholder="Escribe un asunto">
-					</p>    
-				  
-					<p>
-					  <label class="colocar_mensaje">Mensaje
-						<span class="obligatorio">*</span>
-					  </label>                     
-						<textarea  class="texto_mensaje"  placeholder="Específica tu consulta..."></textarea> 
-					</p>                    
-				  
-					<button type="submit">Enviar</button>
-					<p class="aviso">
-					  <span class="obligatorio"> * </span>los campos son obligatorios.
-					</p>          
-			  </form>
-		</div>  
-	  </div>
-	
+					<form>
+						<p>
+							<label for="nombre" class="colocar_nombre">Nombre y apellido
+								<span class="obligatorio">*</span>
+							</label>
+							<input type="text" placeholder="Escribe tu nombre">
+						</p>
+
+						<p>
+							<label for="email" class="colocar_email">Email
+								<span class="obligatorio">*</span>
+							</label>
+							<input type="email" placeholder="Escribe tu Email">
+						</p>
+
+						<p>
+							<label for="telefono" class="colocar_telefono">Teléfono
+							</label>
+							<input type="tel" placeholder="Escribe tu teléfono">
+						</p>
+
+						<p>
+							<label class="colocar_website">Razón Social, Nombre fantasía
+							</label>
+							<input type="url"
+								placeholder="Escribe el nombre de tu tienda/comercio/empresa (nombre legal, fantasía)">
+						</p>
+
+						<p>
+							<label class="colocar_asunto">Asunto
+								<span class="obligatorio">*</span>
+							</label>
+							<input type="text" placeholder="Escribe un asunto">
+						</p>
+
+						<p>
+							<label class="colocar_mensaje">Mensaje
+								<span class="obligatorio">*</span>
+							</label>
+							<textarea class="texto_mensaje" placeholder="Específica tu consulta..."></textarea>
+						</p>
+
+						<button type="submit">Enviar</button>
+						<p class="aviso">
+							<span class="obligatorio"> * </span>los campos son obligatorios.
+						</p>
+					</form>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</section>
 
 	<!-- fin form contacto -->
-	<!-- inicio de footer --> 
+	<!-- inicio de footer -->
 	<footer class="footer">
 		<div class="footerLinks">
 			<ul>
 				<li><a href="https://www.linkedin.com/in/leandro-daniel-dutra/"> Linkedin </a></li>
-				<li><label> | </label></li>
+				<li><label>|</label></li>
 				<li><a href="https://www.instagram.com/">Instagram</a></li>
-				<li><label> | </label></li>
+				<li><label>|</label></li>
 				<li><a href="paginas/contacto.html">contacto@sorawebs.com</a></li>
 			</ul>
 		</div>
 		<div class="footerCopyright">
-			<label>© Copyright. 2022 - Leandro Dutra</label>	
+			<label>© Copyright. 2022 - Leandro Dutra</label>
 		</div>
 	</footer>
 
-	
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
 		crossorigin="anonymous"></script>
 
 
 </body>
+
 </html>
