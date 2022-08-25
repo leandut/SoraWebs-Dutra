@@ -1,14 +1,8 @@
 html,
 
-/*background-color: #2196F3;*/
-
-
-
 /******************************************* BODY HEADER FOOTER ************************************************/
 body {
     padding: 0;
-   /* margin: 15px;*/
-   /* background-color: #062a40;*/
     background-color: #2196F3;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -62,55 +56,17 @@ li {
   height: 25%;
 }
 
-/***************************************        HEADER REEMPLAZADO POR BOOSTRAP      **********************************************/
- /*.headerClass {
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid #d6e1e7;
-    border-radius: 15px;
-}
-
-.headerLogo {
-    content: url('../recursos/img/soraIcon.png');
-    width: 15%;
-    height: 15%;
-}
-
-.navBar {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-}
-
-.navBar li {
-    display: inline-block;
-    padding: 25px;
-    font-size: 25px;
-}
-
-.navBar a {
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-} */
-
-
 /***************************************        FOOTER      **********************************************/
 .footer{
     display: flex;
 	  align-items: center;
-    /* background-color: #1c3443;*/
-    /*border-color: 2px ;*/
-   /*border-top-left-radius: 40px 20px solid white;*/
-   /* border-radius: 15px;*/
    margin-top: 15px;
-   padding: 10px;
     background-color: #0d6efd;
     background-image: linear-gradient(#2196F3,#0d6efd);
 }
 
 .footerLinks{
- /* -ms-box-orient: horizontal;*/
+ -ms-box-orient: horizontal;
   display: flex;
 	justify-content: flex-start;
 	flex: 1;
@@ -143,7 +99,7 @@ li {
     cursor: pointer;
     text-decoration: none;
     font-size: 18px;
-    padding:15px;
+   /* padding:15px;*/
 }
 
 
@@ -215,7 +171,7 @@ li {
 }
     
 .pypBox {
-        width: 600px;
+        width: 400px;
         height: auto;
         background-color: #75868f;
         border: 1px solid #9089ed3d; 
@@ -237,7 +193,8 @@ li {
 
 /**************************************  PRODUCTOS  ***************************************************/
 .productos_tipos{
-    border-bottom: 2px solid #d6e1e7;
+  /*display:flex;*/
+ border-bottom: 2px solid #d6e1e7;
     border-radius: 30px;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -245,45 +202,22 @@ li {
 
 .productos_content {
     display: flex;
-   /* width: 1200px;
-    height: auto;*/
+    width: 1200px;
+    height: auto;
     column-gap: 15px;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-    
+
 .productBox {
-        width: 400px;
-        height: 550px;
-        background-color: #75868f;
-        border: 1px solid #9089ed3d; 
-        border-radius:25px;       
-        margin-bottom: 30px;
-        padding: 20px;
-}
-.productBox2 {
     width: 400px;
     height: 500px;
     background-color: #75868f;
-    border: 1px solid #9089ed3d; 
-    border-radius:25px;       
+    border: 1px solid #9089ed3d;
+    border-radius: 25px;
+    margin-bottom: 30px;
     padding: 20px;
 }
-.productBox3 {
-    width: 400px;
-    height: 720px;
-    background-color: #75868f;
-    border: 1px solid #9089ed3d; 
-    border-radius:25px;       
-    padding: 20px;
-}
-
-.productoImg{
-    width:100%;
-    height:100%;
-    border-radius: 5px;
-}
-
 
 /****************** CONTACTO *******************************************************/
 .contact_form{  
@@ -483,18 +417,17 @@ li {
 	width: auto;
 	margin: auto;
 	margin-top: 50px;
-    margin-bottom: 50px;
+  margin-bottom: 50px;
+  margin-left: 3%;
+  margin-right: 3%;
 	display: grid;
 	grid-template-columns: minmax(auto, 25%) minmax(auto, 75%);
 	grid-template-rows: repeat(4, 200px);
-	/*
-						100px 100px 100px 100px
-	*/
 	grid-template-areas:    'producto1 detalle1'  /*izquierda(foto producto) derecha(detalle)*/
 						     'producto2 detalle2'
 						     'producto3 detalle3'
 						     'producto4 detalle4';
-    row-gap: 20px;
+  row-gap: 20px;
     
 }
 
@@ -517,6 +450,7 @@ li {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+  margin:1%;
 }
 
 .grid a:hover {
@@ -536,9 +470,12 @@ li {
 
 .grid1 a {
 	background-image: url('../recursos/img_planesyprecios/producto1.png');
+
 }
 
 .grid1d {
+  padding: 3%;
+  align-items: center;
 	grid-area: detalle1
 }
 
@@ -552,6 +489,8 @@ li {
 }
 
 .grid2d {
+  padding: 3%;
+  align-items: center;
 	grid-area: detalle2
 }
 
@@ -564,6 +503,8 @@ li {
 }
 
 .grid3d {
+  padding: 3%;
+  align-items: center;
 	grid-area: detalle3
 }
 
@@ -577,6 +518,8 @@ li {
 }
 
 .grid4d {
+  padding: 3%;
+  align-items: center;
 	grid-area: detalle4
 }
 
@@ -588,13 +531,13 @@ li {
       font-size: 80%;
   }
   .footerLinks li{
-  font-size: 80%;
+  font-size: 90%;
   }
   .footerLinks a{
-    font-size: 80%;
+    font-size: 90%;
     }
     .footerCopyright label{
-      font-size: 70%;
+      font-size: 80%;
       }
 }
 @media screen and (max-width: 400px) {
@@ -603,62 +546,13 @@ li {
       font-size: 60%;
   }
   .footerLinks li{
-    font-size: 60%;
+    font-size: 80%;
     }
     .footerLinks a{
-      font-size: 60%;
+      font-size: 80%;
     }
     .footerCopyright label{
-      font-size: 60%;
+      font-size: 80%;
       }
 }
-    /* .menu_sections {
-		flex-wrap: wrap;
-	}
-
-	.menu_info ul,
-	.accesos ul {
-		flex: auto;
-		width: 100%;
-	}
-
-	.menu_sections .logo {
-		justify-content:  flex-start !important;
-		padding: 10px 20px;
-        content: url('../recursos/img/soraIcon.png');
-        width: 15%;
-        height: 15%;
-	}
-
-	.menu_sections .logo,
-	.menu_sections .accesos ul {
-		display: flex;
-		justify-content: center;
-	}
-
-	.menu_btn {
-		display: inline-block;
-	}
-
-	.accesos {
-		text-align: right
-	}
-
-	.accesos ul {
-		display: none !important
-	} */
-
-
-
-
-
-
-/**********************************************    BOOSTRAP CUSTOM            ********************************************/
-/*
-.cardCustom{
-  padding: 1.5em 1em 1em 1em;
-  border-radius: 2em;
- text-align: center;
-  box-shadow: 0 5px 10px rgba(0,0,0,.2);
-  margin: 2em 2em 2em 2em;
-}*/
+ 
