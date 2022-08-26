@@ -1,0 +1,558 @@
+html,
+
+/******************************************* BODY HEADER FOOTER ************************************************/
+body {
+    padding: 0;
+    background-color: #2196F3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1 {
+   color: white; 
+    font-size: 45px;
+    text-align: center;
+}
+
+h2 {
+color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 {
+  color: white;
+    text-align: center;
+}
+
+h4 {
+ color: white;
+}
+
+p {
+   color: white;
+    font-size: 18px;
+}
+
+li {
+  color: white;
+    font-size: 20px;
+}
+.paragraphGenerico{
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  text-align:center;
+}
+.paraphCenter {
+  text-align: center;
+}
+
+/***************************************        HEADER      **********************************************/
+
+.navBarSoraLogo {
+  content: url('../recursos/img/soraIcon.png');
+  width: 25%;
+  height: 25%;
+}
+
+/***************************************        FOOTER      **********************************************/
+.footer{
+    display: flex;
+	  align-items: center;
+   margin-top: 15px;
+    background-color: #0d6efd;
+    background-image: linear-gradient(#2196F3,#0d6efd);
+}
+
+.footerLinks{
+ -ms-box-orient: horizontal;
+  display: flex;
+	justify-content: flex-start;
+	flex: 1;
+}
+
+.footerLinks li{
+  display: inline-block;
+        padding: 15px;
+}
+.footerLinks ul{
+    /*padding-inline-start: 0px;*/
+    flex-wrap: wrap;
+}
+
+.footerLinks a{
+        color: white;
+        cursor: pointer;
+       text-decoration: none;
+        transition-property: color;
+        transition-duration: 2s;        
+        transition-timing-function: linear;
+
+}
+.footerLinks a:hover{
+    color: rgb(47, 223, 31);
+}
+
+.footerCopyright{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+   /* padding:15px;*/
+}
+
+
+/********************************* FIN BODY HEADER FOOTER **************************************/
+
+/********************************* SECCION CAROUSEL **************************************/
+.carouselItems{
+    border-bottom: 2px solid #d6e1e7;
+    padding: 10px;
+}
+
+.carouselImg{
+    content: url('../recursos/img/carousel.png');
+    width: 100%;
+    display:block;
+}
+
+/********************************* SECCION NOSOTROS **************************************/
+.submenu {
+    display: flex;
+    flex-direction: row; 
+    justify-content:center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.nosotrosIcon{
+    content: url('../recursos/img/usersIcon.png');
+    width:5%;
+    height:5%;
+}
+.equipoImg{
+    content: url('../recursos/img/equipo.png');
+    width:50%;
+}
+
+/********************************* SECCION FILTRO **************************************/
+
+
+.filtroIcon{
+    content: url('../recursos/img/filterIcon.png');
+    width:5%;
+    height:5%;
+}
+.graphicsIcon{
+    content: url('../recursos/img/graphicsIcon.png');
+    width:40%;
+    height:50%;
+    display: flex;
+ justify-content: center;
+}
+.divItemCenter{
+    display: flex;
+ justify-content: center;
+}
+
+
+
+/**************************************  PLANES  Y PRECIOS        ***************************************************/
+
+
+.planesyprecios_content {
+    display: flex;
+   /* width: 1200px;
+    height: auto;*/
+    column-gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+    
+.pypBox {
+        width: 400px;
+        height: auto;
+        background-color: #75868f;
+        border: 1px solid #9089ed3d; 
+        margin-bottom: 30px;
+        border-radius:25px;       
+        padding: 20px;
+}
+
+.planImg{
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+}
+.precioImg{
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+}
+
+/**************************************  PRODUCTOS  ***************************************************/
+.productos_tipos{
+  /*display:flex;*/
+ border-bottom: 2px solid #d6e1e7;
+    border-radius: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.productos_content {
+    display: flex;
+    width: 1200px;
+    height: auto;
+    column-gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.productBox {
+    width: 400px;
+    height: 500px;
+    background-color: #75868f;
+    border: 1px solid #9089ed3d;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+/****************** CONTACTO *******************************************************/
+.contact_form{  
+   width: 100%; 
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+   /* background-color: #fbfbfb; */
+    padding-left: 30px; 
+  }
+  
+  
+  .contact_form  input{
+    background-color: #fbfbfb; 
+    width: 100%; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  
+  .contact_form textarea{
+    background-color: #fbfbfb; 
+    width: 100%; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  .contact_form button{
+    width:200px;
+    height: 50px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #73b7d2; 
+    border-color: #73b7d2; 
+    border-style: solid; 
+    border-radius: 10px;    
+    cursor: pointer;
+  }
+  
+  
+  .contact_form  button{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:30px;
+  }
+  
+  
+  .contact_form  span{
+    color: #ab4493; 
+  }
+  
+  
+  .aviso{
+    font-size: 15px;  
+    color: #ffffff;  
+  }  
+  
+  .formulario input:focus{
+    border: 1px solid #97d848;
+  }
+  
+  .formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+  
+/********************************************* LOGIN *************************************/
+
+.login_form{  
+    width: 100%; 
+     height: auto;
+     margin: 80px auto;
+     border-radius: 10px;  
+     padding-bottom: 20px;  
+    /* background-color: #fbfbfb; */
+     padding-left: 30px; 
+   }
+   
+   
+   .login_form  input{
+     background-color: #fbfbfb; 
+     width: 100%;
+     height: 40px; 
+     border-radius: 5px;  
+     border-style: solid; 
+     border-width: 1px; 
+     border-color: #ab4493; 
+     margin-top: 10px;  
+     padding-left: 10px;
+     margin-bottom: 20px; 
+   }
+   
+   
+   .login_form textarea{
+     background-color: #fbfbfb; 
+     width: 100%; 
+     height: 40px; 
+     border-radius: 5px;  
+     border-style: solid; 
+     border-width: 1px; 
+     border-color: #ab4493; 
+     margin-top: 10px;  
+     padding-left: 10px;
+     margin-bottom: 20px; 
+     padding-top: 15px; 
+   }
+   
+   
+   .login_form button{
+     width:200px;
+     height: 50px; 
+     padding-left: 5px;
+     padding-right: 5px;   
+     margin-bottom: 20px; 
+     margin-top: 10px;   
+     text-transform: uppercase;
+     background-color: #73b7d2; 
+     border-color: #73b7d2; 
+     border-style: solid; 
+     border-radius: 10px;  
+     cursor: pointer;
+     text-decoration: none;
+   }
+   
+   
+   .login_form  button{
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size:30px;
+   }
+   
+   
+   .login_form  span{
+     color: #ab4493; 
+   }
+   
+   
+   .aviso{
+     font-size: 15px;  
+     color: #ffffff;  
+   }  
+   
+   .login_formulario input:focus{
+     border: 1px solid #97d848;
+   }
+   
+   .login_formulario textarea:focus{
+     outline:0;
+     border: 1px solid #97d848;
+   }
+   
+  
+  .login_btn:hover {
+      width:100%;
+      height: 50px; 
+      background-color: blue;
+      transition-property: all;
+      transition-duration: 5s;
+      transition-timing-function: ease-in-out;   
+  }
+
+  .login_btn:hover::before {
+    display: none;
+  }
+  .login_btn:hover::after {
+    content:" > Ingresando";
+  }
+  
+
+  .formCenter {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+
+/********************************* GRID  **************************************/
+.grid {
+	width: auto;
+	margin: auto;
+	margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 3%;
+  margin-right: 3%;
+	display: grid;
+	grid-template-columns: minmax(auto, 25%) minmax(auto, 75%);
+	grid-template-rows: repeat(4, 200px);
+	grid-template-areas:    'producto1 detalle1'  /*izquierda(foto producto) derecha(detalle)*/
+						     'producto2 detalle2'
+						     'producto3 detalle3'
+						     'producto4 detalle4';
+  row-gap: 20px;
+    
+}
+
+.grid > div {
+	display: flex;
+	align-items: stretch; /*vertical*/
+	justify-content: center; /* horizonal */
+	background-color: #75868f;
+}
+
+.grid a {
+	color: rgb(4, 0, 0);
+	font-size: 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+  margin:1%;
+}
+
+.grid a:hover {
+	opacity: 0.8 
+}
+
+.grid a:hover {
+	opacity: 0.8 
+}
+
+.grid p:hover {
+	opacity: 0.8 
+}
+.grid1 {
+	grid-area: producto1
+}
+
+.grid1 a {
+	background-image: url('../recursos/img_planesyprecios/producto1.png');
+
+}
+
+.grid1d {
+  padding: 3%;
+  align-items: center;
+	grid-area: detalle1
+}
+
+
+.grid2 {
+	grid-area: producto2
+}
+
+.grid2 a {
+	background-image: url('../recursos/img_planesyprecios/producto2.png');
+}
+
+.grid2d {
+  padding: 3%;
+  align-items: center;
+	grid-area: detalle2
+}
+
+.grid3 {
+	grid-area: producto3
+}
+
+.grid3 a {
+	background-image: url('../recursos/img_planesyprecios/producto3.png');
+}
+
+.grid3d {
+  padding: 3%;
+  align-items: center;
+	grid-area: detalle3
+}
+
+
+.grid4 {
+	grid-area: producto4
+}
+
+.grid4 a {
+	background-image: url('../recursos/img_planesyprecios/producto4.png');
+}
+
+.grid4d {
+  padding: 3%;
+  align-items: center;
+	grid-area: detalle4
+}
+
+/**********************************************    ResponsiveItems            ********************************************/
+
+@media screen and (max-width: 600px) {
+  
+  .paragraphGenerico {
+      font-size: 80%;
+  }
+  .footerLinks li{
+  font-size: 90%;
+  }
+  .footerLinks a{
+    font-size: 90%;
+    }
+    .footerCopyright label{
+      font-size: 80%;
+      }
+}
+@media screen and (max-width: 400px) {
+  
+  .paragraphGenerico {
+      font-size: 60%;
+  }
+  .footerLinks li{
+    font-size: 80%;
+    }
+    .footerLinks a{
+      font-size: 80%;
+    }
+    .footerCopyright label{
+      font-size: 80%;
+      }
+}
+ 
