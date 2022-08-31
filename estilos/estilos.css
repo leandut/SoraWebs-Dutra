@@ -149,10 +149,14 @@ li {
 /**************************************  PRODUCTOS  ***************************************************/
 .productos_tipos {
   /*display:flex;*/
-  border-bottom: 2px solid #d6e1e7;
-  border-radius: 30px;
+  /*border-bottom-left-radius: 30px solid #d6e1e7;*/
+  /*border-bottom-right-radius: 5em,5em;
+    border-bottom-left-radius: 5em,5em;*/
+  /*border-radius: 0 0 30px 30px;*/
   padding-bottom: 30px;
-  padding-top: 30px; }
+  padding-top: 30px;
+  background-color: #0d6efd;
+  background-image: linear-gradient(#0d6efd, #2196F3); }
 
 .productos_content {
   display: flex;
@@ -179,7 +183,6 @@ li {
   border-radius: 10px;
   padding-top: 30px;
   padding-bottom: 20px;
-  /* background-color: #fbfbfb; */
   padding-left: 30px; }
   .contact_form input {
     background-color: #fbfbfb;
@@ -241,7 +244,6 @@ li {
   margin: 80px auto;
   border-radius: 10px;
   padding-bottom: 20px;
-  /* background-color: #fbfbfb; */
   padding-left: 30px; }
   .login_form input {
     background-color: #fbfbfb;
@@ -495,11 +497,11 @@ span.price {
 
 .btnCheckout {
   color: red;
-  font-size: 10px;
+  font-size: 25x;
   text-decoration: none;
   text-align: center; }
 
 .btnCheckout {
   color: blue;
-  font-size: 10px;
+  font-size: 25x;
   text-decoration: none; }
