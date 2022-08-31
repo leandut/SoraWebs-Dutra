@@ -194,6 +194,8 @@ html, body {
     border-radius: 30px;
     padding-bottom: 30px;
     padding-top: 30px;
+    background-color: #0d6efd;
+    background-image: linear-gradient(#2196F3, #0d6efd);
   }
   
   .productos_content {
@@ -225,7 +227,6 @@ html, body {
     padding-top: 30px;
     padding-bottom: 20px;
   
-    /* background-color: #fbfbfb; */
     padding-left: 30px;
   
     input {
@@ -302,8 +303,6 @@ html, body {
     margin: 80px auto;
     border-radius: 10px;
     padding-bottom: 20px;
-  
-    /* background-color: #fbfbfb; */
     padding-left: 30px;
   
     input {
@@ -640,7 +639,7 @@ $colores: (
 
 @mixin btnCheckout($btn-color) {
 	color: $btn-color;
-	font-size: 10px;
+	font-size: 25x;
 	text-decoration: none
 }
 
